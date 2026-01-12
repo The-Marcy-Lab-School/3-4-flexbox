@@ -1,66 +1,55 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-/* Flex makes it easy to put things in a row with beautiful spacing */
-.flex-container {
-  /* TODO: Add Flexbox to this class */
-
-  /* TODO: Add gap to this class */
-
-  /* TODO: Add justify-content to this class */
-
-  /* TODO: Add align-items to this class */
-}
-
-.flex-item {
-  /* TODO: Add a flex of 1 to this class */
-}
-
-.flex-item:hover {
-  /* TODO: Add a flex of 3 to this class */
-}
-
-
-
-#squares-container {
+/* The parent container */
+#letters-container {
   border: 1px solid black;
   background: lightgrey;
   padding: 2rem;
+
+  /* TODO: Add flex properties like display, gap, justify-content, and align-items */
+
 }
 
-#squares-container>div {
+/* The child elements */
+#letters-container>p {
   border: 1px solid black;
-  font-size: 30px;
-  /* CSS Animations*/
-  transition: 0.5s;
-
-  /* Align-Content and text-align is an easy way to center things */
+  font-size: 2rem;
   align-content: center;
   text-align: center;
+  /* CSS Animation to show the size changing more slowly */
+  transition: 0.5s;
+
+  /* TODO: Add flex properties like flex-grow, flex-shrink, and flex-basis */
 }
 
-#squares-container>div:nth-child(1) {
+/* The first child element */
+#letters-container>p:nth-child(1) {
   background: red;
   min-height: 40px;
 }
 
-#squares-container>div:nth-child(2) {
+/* The second child element */
+#letters-container>p:nth-child(2) {
   background: orange;
   min-height: 60px;
 }
 
-#squares-container>div:nth-child(3) {
+/* And so on... */
+#letters-container>p:nth-child(3) {
   background: yellow;
   min-height: 80px;
 }
 
-#squares-container>div:nth-child(4) {
+#letters-container>p:nth-child(4) {
   background: green;
   min-height: 100px;
 }
 
-#squares-container>div:nth-child(5) {
+#letters-container>p:nth-child(5) {
   background: blue;
   min-height: 120px;
 }
